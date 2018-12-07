@@ -77,15 +77,9 @@
  # define BIT_HALL_W 0x01
 
  # define BOOLE_HALL_STATE_CHANGE (hall_ptr->sensored_current_state_pre != hall_ptr->sensored_current_state)
- # define RENEW_CURRENT_HALL_STATE (hall_ptr->sensored_current_state = hall_to_mos_state[hall_ptr->hall_value])
-
- # define RESERVE_CURRENT_HALL_VALUE_TO_NEXT (hall_ptr->hall_value_next = hall_ptr->hall_value)
- # define RETRIEVE_NEXT_HALL_VALUE_TO_CURRENT (hall_ptr->hall_value = hall_ptr->hall_value_next)
- # define SAVE_CURRENT_HALL_VALUE_TO_PREVIOUS (hall_ptr->hall_value_pre = hall_ptr->hall_value)
- # define LOAD_PREVIOUS_HALL_VALUE_TO_CURRENT (hall_ptr->hall_value = hall_ptr->hall_value_pre)
- # define SAVE_CURRENT_HALL_STATE_TO_PREVIOUS (hall_ptr->sensored_current_state_pre = hall_ptr->sensored_current_state)
- # define LOAD_PREVIOUS_HALL_STATE_TO_CURRENT (hall_ptr->sensored_current_state = hall_ptr->sensored_current_state_pre)
-
+ # define REFRESH_CURRENT_HALL_STATE (hall_ptr->sensored_current_state = hall_to_mos_state[hall_ptr->hall_value])
+ # define REFRESH_PREVIOUS_HALL_STATE (hall_ptr->sensored_current_state_pre = hall_ptr->sensored_current_state)
+ 
  # define BOOLE_DMA_RENEWED (DMA_GetFlagStatus(DMA1_FLAG_TC5) || \
                              DMA_GetFlagStatus(DMA1_FLAG_TC1) || \
                              DMA_GetFlagStatus(DMA1_FLAG_TC7))
@@ -103,10 +97,10 @@
                              (hall_ptr->sensored_current_state != Phs_VII)) ||    \
                             (next_mos_state[hall_ptr->sensored_current_state_pre] \
                              == hall_ptr->sensored_current_state))
- # define BOOLE_HALL_STATE_VALIDITY_LEGAL (hall_ptr->hall_state_legal)
- # define BOOLE_HALL_STATE_VALIDITY_LEGAL_PRE (hall_ptr->hall_state_legal_pre)
+ # define BOOLE_HALL_STATE_LEGAL (hall_ptr->hall_state_legal)
+ # define BOOLE_HALL_STATE_LEGAL_PRE (hall_ptr->hall_state_legal_pre)
 
- # define SAVE_CURRENT_HALL_STATE_VALIDITY_TO_PREVIOUS hall_ptr->hall_state_legal_pre = hall_ptr->hall_state_legal
+ # define REFRESH_PREVIOUS_HALL_STATE_LEGAL hall_ptr->hall_state_legal_pre = hall_ptr->hall_state_legal
 
  # define PS_LOWER_THAN_4762RPM (hall_ptr->dt_commutate_p > 0x2A30)  //5 case: 4
  

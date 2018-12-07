@@ -84,8 +84,6 @@ void user_param_fill(void);
 // eGet_Zero_Cross_Point_State  get_zero_cross_point_state;
 // eHall_Bemf_Switch_State      hall_bemf_switch_state;
 
-  WatchWindow num_pwm;
-
 //  u16 feedback_CodeEfficiency_SMC_pre;
   u16 feedback_CodeEfficiency_SMC;
 	u16 feedback_CodeEfficiency_SMM;

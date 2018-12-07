@@ -47,23 +47,6 @@
  # define FeedBack_CDE_SMC 0xC0
  # define FeedBack_CDE_SMM 0xC1
 
- # define FeedBack_Test_Wx0 0xD0
- # define FeedBack_Test_Wx1 0xD1
- # define FeedBack_Test_Wx2 0xD2
- # define FeedBack_Test_Wx3 0xD3
- # define FeedBack_Test_Wx4 0xD4
- # define FeedBack_Test_Wx5 0xD5
- # define FeedBack_Test_Wx6 0xD6
- # define FeedBack_Test_Wx7 0xD7
- # define FeedBack_Test_Wx8 0xD8
- # define FeedBack_Test_Wx9 0xD9
- # define FeedBack_Test_WxA 0xDA
- # define FeedBack_Test_WxB 0xDB
- # define FeedBack_Test_WxC 0xDC
- # define FeedBack_Test_WxD 0xDD
- # define FeedBack_Test_WxE 0xDE
- # define FeedBack_Test_WxF 0xDF
-
  # define FeedBack_Test_0_Long_L16 0xE0
  # define FeedBack_Test_0_Long_H16 0xE1
  # define FeedBack_Test_1_Long_L16 0xE2

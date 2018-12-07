@@ -219,24 +219,7 @@
      STDSCI_PACK_TX_Init(FeedBack_PWM_NUM_Difference, &(btx_ptr->pck_0xB3), &(btx_ptr->pck_0xC0));
 
      STDSCI_PACK_TX_Init(FeedBack_CDE_SMC, &(btx_ptr->pck_0xC0), &(btx_ptr->pck_0xC1));
-     STDSCI_PACK_TX_Init(FeedBack_CDE_SMM, &(btx_ptr->pck_0xC1), &(btx_ptr->pck_0xD0));
-
-     STDSCI_PACK_TX_Init(FeedBack_Test_Wx0, &(btx_ptr->pck_0xD0), &(btx_ptr->pck_0xD1));
-     STDSCI_PACK_TX_Init(FeedBack_Test_Wx1, &(btx_ptr->pck_0xD1), &(btx_ptr->pck_0xD2));
-     STDSCI_PACK_TX_Init(FeedBack_Test_Wx2, &(btx_ptr->pck_0xD2), &(btx_ptr->pck_0xD3));
-     STDSCI_PACK_TX_Init(FeedBack_Test_Wx3, &(btx_ptr->pck_0xD3), &(btx_ptr->pck_0xD4));
-     STDSCI_PACK_TX_Init(FeedBack_Test_Wx4, &(btx_ptr->pck_0xD4), &(btx_ptr->pck_0xD5));
-     STDSCI_PACK_TX_Init(FeedBack_Test_Wx5, &(btx_ptr->pck_0xD5), &(btx_ptr->pck_0xD6));
-     STDSCI_PACK_TX_Init(FeedBack_Test_Wx6, &(btx_ptr->pck_0xD6), &(btx_ptr->pck_0xD7));
-     STDSCI_PACK_TX_Init(FeedBack_Test_Wx7, &(btx_ptr->pck_0xD7), &(btx_ptr->pck_0xD8));
-     STDSCI_PACK_TX_Init(FeedBack_Test_Wx8, &(btx_ptr->pck_0xD8), &(btx_ptr->pck_0xD9));
-     STDSCI_PACK_TX_Init(FeedBack_Test_Wx9, &(btx_ptr->pck_0xD9), &(btx_ptr->pck_0xDA));
-     STDSCI_PACK_TX_Init(FeedBack_Test_WxA, &(btx_ptr->pck_0xDA), &(btx_ptr->pck_0xDB));
-     STDSCI_PACK_TX_Init(FeedBack_Test_WxB, &(btx_ptr->pck_0xDB), &(btx_ptr->pck_0xDC));
-     STDSCI_PACK_TX_Init(FeedBack_Test_WxC, &(btx_ptr->pck_0xDC), &(btx_ptr->pck_0xDD));
-     STDSCI_PACK_TX_Init(FeedBack_Test_WxD, &(btx_ptr->pck_0xDD), &(btx_ptr->pck_0xDE));
-     STDSCI_PACK_TX_Init(FeedBack_Test_WxE, &(btx_ptr->pck_0xDE), &(btx_ptr->pck_0xDF));
-     STDSCI_PACK_TX_Init(FeedBack_Test_WxF, &(btx_ptr->pck_0xDF), &(btx_ptr->pck_0xE0));
+     STDSCI_PACK_TX_Init(FeedBack_CDE_SMM, &(btx_ptr->pck_0xC1), &(btx_ptr->pck_0xE0));
 
      STDSCI_PACK_TX_Init(FeedBack_Test_0_Long_L16, &(btx_ptr->pck_0xE0), &(btx_ptr->pck_0xE1));
      STDSCI_PACK_TX_Init(FeedBack_Test_0_Long_H16, &(btx_ptr->pck_0xE1), &(btx_ptr->pck_0xE2));
