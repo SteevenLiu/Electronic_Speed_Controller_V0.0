@@ -302,13 +302,39 @@
 
   typedef volatile enum
   {
-    STATE_HALL_OBSERVER_LS = 0,
-    STATE_HALL_OBSERVER_HS = 1,
+    STATE_HALL_OBSERVER_LS = 0,         // low speed state
+    STATE_HALL_OBSERVER_HS_CHECK = 1,   // high speed check mode
+    STATE_HALL_OBSERVER_HS_FS_LAG = 2,  // high speed forced lag-shift state
+    STATE_HALL_OBSERVER_HS_FS_LEAD = 3,  // high speed forced lead_shift state
   }eSub_Hall_Observer_State;
-	
+
+  typedef volatile enum
+  {
+    STATE_WatchWindow_Idle = 0,
+    STATE_WatchWindow_Wx0 = 1,
+    STATE_WatchWindow_Wx1 = 2,
+    STATE_WatchWindow_Wx2 = 3,
+    STATE_WatchWindow_Wx3 = 4,
+    STATE_WatchWindow_Wx4 = 5,
+    STATE_WatchWindow_Wx5 = 6,
+    STATE_WatchWindow_Wx6 = 7,
+    STATE_WatchWindow_Wx7 = 8,
+    STATE_WatchWindow_Wx8 = 9,
+    STATE_WatchWindow_Wx9 = 10,
+    STATE_WatchWindow_WxA = 11,
+    STATE_WatchWindow_WxB = 12,
+    STATE_WatchWindow_WxC = 13,
+    STATE_WatchWindow_WxD = 14,
+    STATE_WatchWindow_WxE = 15,
+    STATE_WatchWindow_WxF = 16,
+    STATE_WatchWindow_STOP = 64,
+  }eSub_WatchWindow_State;
+
   typedef struct
   {
     volatile u8  hall_value;
+    volatile u8  hall_value_pre;
+    volatile u8  hall_value_next;
     volatile u8  sensored_current_state;
     volatile u8  sensored_current_state_pre;
     volatile u16 hall_bemf_switch_speed;
@@ -379,7 +405,52 @@
 		volatile s16 d_num_pwm_60d;
     volatile u32 dt_m_max_d_num_pwm_60d;
 		volatile u32 cntr_over_d_num_60d;
+
+    volatile u16 cntr_forced_shift_period;
+    volatile u16 cntr_FS_LEAD;
+		volatile u16 max_FS_LEAD;
+
+//		eSub_WatchWindow_State ww_state;
+//    volatile Boole watchwindow_triger;
+//		volatile u16 num_pwm_60d_m_wx0;
+//		volatile u16 num_pwm_60d_m_wx1;
+//		volatile u16 num_pwm_60d_m_wx2;
+//		volatile u16 num_pwm_60d_m_wx3;
+//		volatile u16 num_pwm_60d_m_wx4;
+//		volatile u16 num_pwm_60d_m_wx5;
+//		volatile u16 num_pwm_60d_m_wx6;
+//		volatile u16 num_pwm_60d_m_wx7;
+//		volatile u16 num_pwm_60d_p_wx0;
+//		volatile u16 num_pwm_60d_p_wx1;
+//		volatile u16 num_pwm_60d_p_wx2;
+//		volatile u16 num_pwm_60d_p_wx3;
+//		volatile u16 num_pwm_60d_p_wx4;
+//		volatile u16 num_pwm_60d_p_wx5;
+//		volatile u16 num_pwm_60d_p_wx6;
+//		volatile u16 num_pwm_60d_p_wx7;
   } Hall_Observer;
+
+  typedef struct
+  {
+		eSub_WatchWindow_State ww_state;
+    volatile Boole watchwindow_triger;
+		volatile u16 num_pwm_60d_m_wx0;
+		volatile u16 num_pwm_60d_m_wx1;
+		volatile u16 num_pwm_60d_m_wx2;
+		volatile u16 num_pwm_60d_m_wx3;
+		volatile u16 num_pwm_60d_m_wx4;
+		volatile u16 num_pwm_60d_m_wx5;
+		volatile u16 num_pwm_60d_m_wx6;
+		volatile u16 num_pwm_60d_m_wx7;
+		volatile u16 num_pwm_60d_p_wx0;
+		volatile u16 num_pwm_60d_p_wx1;
+		volatile u16 num_pwm_60d_p_wx2;
+		volatile u16 num_pwm_60d_p_wx3;
+		volatile u16 num_pwm_60d_p_wx4;
+		volatile u16 num_pwm_60d_p_wx5;
+		volatile u16 num_pwm_60d_p_wx6;
+		volatile u16 num_pwm_60d_p_wx7;
+  } WatchWindow;
 
 //
 // 6.Reserved others
@@ -545,6 +616,8 @@
    extern eGet_Zero_Cross_Point_State  get_zero_cross_point_state;
    extern eHall_Bemf_Switch_State      hall_bemf_switch_state;
 
+	 extern WatchWindow num_pwm;
+	
 //   extern u16 feedback_CodeEfficiency_SMC_pre;
    extern u16 feedback_CodeEfficiency_SMC;
 	 extern u16 feedback_CodeEfficiency_SMM;

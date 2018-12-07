@@ -133,10 +133,10 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
           Chopper_Phase_VI();
           break;
        default:
-         Chopper_Phase_ZRO(); 
+         Chopper_Phase_ZRO();
      }
    }
-	 
+
   void hall_sensor_init(void)
   {
     BLDCM_Controller* motor_ptr;
@@ -145,7 +145,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
     hall_ptr = &bldcm_hall_sensor_m1;
     hall_ptr->hall_value = Get_Hall();
 //		hall_ptr->state_hall_err = STATE_HALL_OK;
-		
+
     if((hall_ptr->hall_value == 0)||(hall_ptr->hall_value == 7))
     {
       motor_ptr->app_status |= status_hall_error;
@@ -153,22 +153,22 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 
     hall_ptr->sensored_current_state = hall_to_mos_state[hall_ptr->hall_value];
     hall_ptr->sensored_current_state_pre = hall_ptr->sensored_current_state;
-		
+
 //    motor_ptr->test_0 = hall_ptr->sensored_current_state_pre;
 //    motor_ptr->test_1 = hall_ptr->sensored_current_state;
-  }	
+  }
 
   void Get_Hall_2_UC(void) /*2018.10.19*/
   {
     BLDCM_Controller* motor_ptr;
-    motor_ptr = &bldcm_m1;		
-		
+    motor_ptr = &bldcm_m1;
+
     Hall_Sensor* hall_ptr;
     hall_ptr = &bldcm_hall_sensor_m1;
 
     u32 lgth_phs;
     lgth_phs = (motor_ptr->average_speed) >> LS_MotorSpeed_Cntr;
-		
+
 //  hall_ptr->hall_value  = ((GPIO_ReadInputDataBit(Port_Hall_A, Pin_Hall_C))<<2);
 //  hall_ptr->hall_value |= ((GPIO_ReadInputDataBit(Port_Hall_B, Pin_Hall_B))<<1);
 
@@ -225,7 +225,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 			 // Hall_B: always high
 					hall_ptr->hall_value |= 2; // 1<<1;
 			 // Hall_C: commute, low -> high
-//          hall_ptr->hall_value |= ((GPIO_ReadInputDataBit(Port_Hall_C, Pin_Hall_A)));
+//        hall_ptr->hall_value |= ((GPIO_ReadInputDataBit(Port_Hall_C, Pin_Hall_A)));
 					if(motor_ptr->average_speed > 0x53200) // <515rpm
 					{
 						hall_ptr->hall_value |= GPIO_ReadInputDataBit(Port_Hall_C, Pin_Hall_A);
@@ -257,7 +257,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 					hall_ptr->hall_value |= 1;
 				break;
 				default:
-				break;		
+				break;
 			} /*switch (hall_ptr->sensored_current_state)*/
     } /*if(control_machine_state == STATE_CONTROL_IDLE)*/
 	}
@@ -272,7 +272,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 
     if(hall_ptr->sensored_current_state_pre != hall_ptr->sensored_current_state)
     {
-//    Do calculation for 8 sample moving average filter used for speed PI			
+//    Do calculation for 8 sample moving average filter used for speed PI
 //      if((hall_ptr->sensored_current_state != Phs_II) || \
 //				 (hall_ptr->sensored_current_state != Phs_V))
 //			{
@@ -283,7 +283,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 //				motor_ptr->motorspeed = motor_ptr->average_speed;
 //			}
 
-      motor_ptr->motorspeed = motor_ptr->motorspeed_cntr << LS_MotorSpeed_Cntr ;			
+      motor_ptr->motorspeed = motor_ptr->motorspeed_cntr << LS_MotorSpeed_Cntr ;
 			motor_ptr->motorspeed_cntr = 0;
 			motor_ptr->motorspeed_sum -= motor_ptr->motorspeed_buffer[motor_ptr->speed_sample_index];
 			motor_ptr->motorspeed_buffer[motor_ptr->speed_sample_index] = motor_ptr->motorspeed;
@@ -304,15 +304,15 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 			else
       {;}
     }
-	}		
-	
+	}
+
   void ESC_PWM_Counter_2_UC(void)
   {
     BLDCM_Controller* motor_ptr;
     motor_ptr = &bldcm_m1;
     Hall_Sensor* hall_ptr;
     hall_ptr = &bldcm_hall_sensor_m1;
-		
+
  // validate PWMs counts and calculate average speed
     if(hall_ptr->sensored_current_state_pre != hall_ptr->sensored_current_state)
 		{
@@ -542,7 +542,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
       }
       else
       {;} /*if(motor_ptr->motorspeed_flag_commute_1st_Phs_V != 1) ... */
-    } /*if((hall_ptr->sensored_current_state == Phs_V) || \ ...*/		
+    } /*if((hall_ptr->sensored_current_state == Phs_V) || \ ...*/
 
  // counting PWMs in Phs_VI
     if((hall_ptr->sensored_current_state == Phs_VI) || \
@@ -568,7 +568,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 		motor_ptr->motorspeed_hall_A_pre = motor_ptr->motorspeed_hall_A_current;
     motor_ptr->motorspeed_hall_B_pre = motor_ptr->motorspeed_hall_B_current;
     motor_ptr->motorspeed_hall_C_pre = motor_ptr->motorspeed_hall_C_current;
-	}		
+	}
 
 #if 1 //defined(Hall_MODE_ENABLE)||defined(Hall_BEMF_SWITCH_MODE_ENABLE)
 /*PAC5XXX_RAMFUNC*/ void get_hall_value_and_change_mos_state(void)
@@ -630,9 +630,9 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 //				}
 
 //				ESC_Commutate(hall_ptr->sensored_current_state);
-//				
+//
 //				hall_ptr->state_hall_err = STATE_HALL_ERR_I;
-//			}			
+//			}
 //    break;
 //		case STATE_HALL_ERR_I:
 //			if(/*(control_machine_state == STATE_CONTROL_OL_SWITCH_CL_WAIT) || */                        \
@@ -646,7 +646,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 //				}
 
 //				ESC_Commutate(hall_ptr->sensored_current_state);
-//				
+//
 //				hall_ptr->state_hall_err = STATE_HALL_OK;
 //			}
 //			else
@@ -655,9 +655,9 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 //				main_machine_state = STATE_MAIN_FAULT;
 //				control_machine_state = STATE_CONTROL_IDLE;
 //				motor_ptr->app_status |= status_hall_error;
-//				
+//
 //				feedback_Test0 = motor_ptr->temp_pwm_duty;
-//				feedback_Test1 = hall_ptr->sensored_current_state_pre;		
+//				feedback_Test1 = hall_ptr->sensored_current_state_pre;
 //				feedback_Test2 = next_mos_state[hall_ptr->sensored_current_state_pre];
 //				feedback_Test3 = hall_ptr->sensored_current_state;
 //			}
@@ -666,8 +666,8 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 //    break;
 //		default:
 //    break;
-//	}		
-	
+//	}
+
   if(/*(control_machine_state == STATE_CONTROL_OL_SWITCH_CL_WAIT) || */                        \
 		 (hall_ptr->sensored_current_state_pre == hall_ptr->sensored_current_state) ||             \
      (next_mos_state[hall_ptr->sensored_current_state_pre] == hall_ptr->sensored_current_state))
@@ -681,9 +681,9 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
     ESC_Commutate(hall_ptr->sensored_current_state);
 
 //  ESC_PWM_Counter();
-		
+
 //    if(hall_ptr->sensored_current_state_pre != hall_ptr->sensored_current_state)
-//    {			
+//    {
 ////    Do calculation for 8 sample moving average filter used for speed PI
 //      motor_ptr->motorspeed = motor_ptr->motorspeed_cntr << LS_MotorSpeed_Cntr ;
 //      motor_ptr->motorspeed_cntr = 0;
@@ -700,7 +700,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 //    else
 //    {
 //      motor_ptr->motorspeed_cntr++;
-//    } /*if(hall_ptr->sensored_current_state_pre != hall_ptr->sensored_current_state)*/	
+//    } /*if(hall_ptr->sensored_current_state_pre != hall_ptr->sensored_current_state)*/
   }
   else
   {
@@ -708,13 +708,13 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
     main_machine_state = STATE_MAIN_FAULT;
     control_machine_state = STATE_CONTROL_IDLE;
     motor_ptr->app_status |= status_hall_error;
-		
+
 //		feedback_Test0 = motor_ptr->temp_pwm_duty;
 //		feedback_Test1 = hall_ptr->sensored_current_state_pre;
 //		feedback_Test2 = next_mos_state[hall_ptr->sensored_current_state_pre];
 //		feedback_Test3 = hall_ptr->sensored_current_state;
   }/*if((hall_ptr->sensored_current_state_pre == hall_ptr->sensored_current_state) || ...*/
-	
+
 //  hall_ptr->sensored_current_state_pre = hall_ptr->sensored_current_state;
 }
 #endif
@@ -733,9 +733,9 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 //      main_machine_state = STATE_MAIN_FAULT;
 //      control_machine_state = STATE_CONTROL_IDLE;
 //      motor_ptr->app_status |= status_hall_error;
-//    }		
-	
-    if BOOLE_HALL_STATE_LEGAL
+//    }
+
+    if BOOLE_HALL_STATE_VALIDITY_LEGAL
     {
       if(control_machine_state == STATE_CONTROL_OL_SWITCH_CL_WAIT)
       {
@@ -765,7 +765,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
       main_machine_state = STATE_MAIN_FAULT;
 //    control_machine_state = STATE_CONTROL_IDLE;
       motor_ptr->app_status |= status_hall_error;
-		
+
 //      feedback_Test0 = motor_ptr->temp_pwm_duty;
 //      feedback_Test1 = hall_ptr->sensored_current_state_pre;
 //      feedback_Test2 = next_mos_state[hall_ptr->sensored_current_state_pre];
@@ -792,7 +792,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 
      if(BOOLE_HALL_W_SET) hall_value |= BIT_HALL_W;
 		 else hall_value &= ~BIT_HALL_W;
-	 
+
      return hall_value;
    }
 //
@@ -807,36 +807,38 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
      STDSCI_BLOCK_TX* btx_ptr;
      btx_ptr = &block_tx;
 
+		 WatchWindow* ww_ptr;
+		 ww_ptr = &num_pwm;
+
 //	   BLDCM_Controller* motor_ptr;
 //	   motor_ptr = &bldcm_m1;
 //
-//     determine current hall value - bldcm_hall_observer_m1.hall_value
-//     and hall state - bldcm_hall_observer_m1.sensored_current_state
-//     . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+//   determine current hall value - bldcm_hall_observer_m1.hall_value
+//   and hall state - bldcm_hall_observer_m1.sensored_current_state
+//   . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+//   vary hall observer state: Low Speed or High Speed
+//     switch (hall_ptr->observer_state)
+//     {
+//       case STATE_HALL_OBSERVER_LS:
+//         if(hall_ptr->dt_commutate_m_average <  0xA769) // >1200rpm // 0xC8E5) // >1000rpm
+//         {
+//					 hall_ptr->observer_state = STATE_HALL_OBSERVER_HS;
+//           SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0x82), hall_ptr->observer_state);
+//         }
+//       break;
+//			 case STATE_HALL_OBSERVER_HS:
+//         if(hall_ptr->dt_commutate_m_average > 0xC8E5) // <1000rpm // 0xFB1E) // <800rpm
+//         {
+//           hall_ptr->observer_state = STATE_HALL_OBSERVER_LS;
+//           SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0x82), hall_ptr->observer_state);
+//         }
+//       break;
+//       default:;
+//     }
 //
-//   vary hall observer state
-     switch (hall_ptr->observer_state)
-     {
-       case STATE_HALL_OBSERVER_LS:
-         if(hall_ptr->dt_commutate_m_average <  0xA769) // >1200rpm // 0xC8E5) // >1000rpm
-         {
-					 hall_ptr->observer_state = STATE_HALL_OBSERVER_HS;
-           SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0x82), hall_ptr->observer_state);
-         }
-       break;
-			 case STATE_HALL_OBSERVER_HS:
-         if(hall_ptr->dt_commutate_m_average > 0xC8E5) // <1000rpm // 0xFB1E) // <800rpm
-         {
-           hall_ptr->observer_state = STATE_HALL_OBSERVER_LS;
-           SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0x82), hall_ptr->observer_state);
-         }
-       break;
-       default:;
-     }
-//
-     hall_ptr->t_base_temp = TIM_GetCounter(TIM2);
+     hall_ptr->t_base_temp = TIM_GetCounter(TIM2);  //?
 
-     if (hall_ptr->observer_state == STATE_HALL_OBSERVER_HS)
+     if (hall_ptr->observer_state == STATE_HALL_OBSERVER_HS_CHECK)
      {
        switch(hall_ptr->sensored_current_state)
        {
@@ -859,73 +861,179 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
            hall_ptr->hall_value |= BOOLE_HALL_U_SET? BIT_HALL_U:0x00;
          break;
          default:
-//             hall_ptr->hall_value &= BOOLE_HALL_W_RESET? ~BIT_HALL_W:0xFF;
-//             hall_ptr->hall_value |= BOOLE_HALL_V_SET? BIT_HALL_V:0x00;
-//             hall_ptr->hall_value &= BOOLE_HALL_U_RESET? ~BIT_HALL_U:0xFF;
-//             hall_ptr->hall_value |= BOOLE_HALL_W_SET? BIT_HALL_W:0x00;
-//             hall_ptr->hall_value &= BOOLE_HALL_V_RESET? ~BIT_HALL_V:0xFF;
-//             hall_ptr->hall_value |= BOOLE_HALL_U_SET? BIT_HALL_U:0x00;
+//         hall_ptr->hall_value &= BOOLE_HALL_W_RESET? ~BIT_HALL_W:0xFF;
+//         hall_ptr->hall_value |= BOOLE_HALL_V_SET? BIT_HALL_V:0x00;
+//         hall_ptr->hall_value &= BOOLE_HALL_U_RESET? ~BIT_HALL_U:0xFF;
+//         hall_ptr->hall_value |= BOOLE_HALL_W_SET? BIT_HALL_W:0x00;
+//         hall_ptr->hall_value &= BOOLE_HALL_V_RESET? ~BIT_HALL_V:0xFF;
+//         hall_ptr->hall_value |= BOOLE_HALL_U_SET? BIT_HALL_U:0x00;
          break;
        } /*switch(hall_ptr->sensored_current_state)*/
+//
+       RENEW_CURRENT_HALL_STATE;
      } /*if (hall_ptr->observer_state == STATE_HALL_OBSERVER_HS)*/
-     else
+     else if(hall_ptr->observer_state == STATE_HALL_OBSERVER_LS)
      {
        hall_ptr->hall_value &= BOOLE_HALL_W_RESET? ~BIT_HALL_W:0xFF;
        hall_ptr->hall_value |= BOOLE_HALL_V_SET? BIT_HALL_V:0x00;
        hall_ptr->hall_value &= BOOLE_HALL_U_RESET? ~BIT_HALL_U:0xFF;
        hall_ptr->hall_value |= BOOLE_HALL_W_SET? BIT_HALL_W:0x00;
        hall_ptr->hall_value &= BOOLE_HALL_V_RESET? ~BIT_HALL_V:0xFF;
-       hall_ptr->hall_value |= BOOLE_HALL_U_SET? BIT_HALL_U:0x00;      
+       hall_ptr->hall_value |= BOOLE_HALL_U_SET? BIT_HALL_U:0x00;
+//
+       RENEW_CURRENT_HALL_STATE;
      }
 //
-//   measure pwm number in 60 degree
-     if BOOLE_HALL_STATE_CHANGE
+     if(hall_ptr->observer_state == STATE_HALL_OBSERVER_LS)
      {
-       hall_ptr->num_pwm_60d_m = hall_ptr->cntr_pwm_60d;
-       hall_ptr->cntr_pwm_60d = 1;
-//       SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0xB1), hall_ptr->num_pwm_60d_m);
-//       SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0xB2), hall_ptr->num_pwm_60d_p);
-//       SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0xB1), hall_ptr->min_d_num_pwm_60d);
-//       SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0xB2), hall_ptr->max_d_num_pwm_60d);
+       hall_ptr->cntr_forced_shift_period = 6;
      }
-		 else if(main_machine_state != STATE_MAIN_STOP_STANDBY) hall_ptr->cntr_pwm_60d++;
-		 else hall_ptr->cntr_pwm_60d = 0;
-
-     hall_ptr->dt_base_temp = (hall_ptr->t_base_temp > hall_ptr->t_base_commutate)? \
-                              (hall_ptr->t_base_temp - hall_ptr->t_base_commutate): \
-                              (hall_ptr->t_base_temp + ARR_HALL_CAP - hall_ptr->t_base_commutate);
-
-     if BOOLE_HALL_STATE_CHANGE
+     else if(hall_ptr->observer_state != STATE_HALL_OBSERVER_HS_CHECK)
      {
-       hall_ptr->t_base_commutate = hall_ptr->t_base_temp;
-       hall_ptr->dt_base_commutate = hall_ptr->dt_base_temp;
+       hall_ptr->cntr_forced_shift_period = 0;
      }
-//
-//   hall state varification
-     if (hall_ptr->observer_state == STATE_HALL_OBSERVER_HS)
-     {
-       if BOOLE_HALL_STATE_CHANGE
-       {
-         hall_ptr->d_num_pwm_60d = (hall_ptr->num_pwm_60d_m > hall_ptr->num_pwm_60d_p)? \
-                                   (hall_ptr->num_pwm_60d_m - hall_ptr->num_pwm_60d_p): \
-                                   (hall_ptr->num_pwm_60d_p - hall_ptr->num_pwm_60d_m);
-				 
-				 if((hall_ptr->d_num_pwm_60d > 1) &&                        \
-            (hall_ptr->d_num_pwm_60d > (hall_ptr->num_pwm_60d_p>>2)))
-//         if(hall_ptr->d_num_pwm_60d > 1)
-         {
-           BOOLE_HALL_STATE_LEGAL = False;
-           motor_ptr->app_status |= status_hall_error;
-         }
-       }
-		 }
      else
      {
-       BOOLE_HALL_STATE_LEGAL = BOOLE_HALL_LEGAL? True:False;
-       motor_ptr->app_status |= BOOLE_HALL_STATE_LEGAL? 0:status_hall_error;
-     } /*if (hall_ptr->observer_state == STATE_HALL_OBSERVER_HS)*/
+       if(++hall_ptr->cntr_forced_shift_period > 6) \
+         hall_ptr->cntr_forced_shift_period = 6;
+     }
+
+     switch (hall_ptr->observer_state)
+     {
+       case STATE_HALL_OBSERVER_LS:
+//       verify Hall State when motor speed is low
+         BOOLE_HALL_STATE_VALIDITY_LEGAL = BOOLE_HALL_LEGAL? True:False;
+         motor_ptr->app_status |= BOOLE_HALL_STATE_VALIDITY_LEGAL? 0:status_hall_error;
+//
+//       accumulate pwm number after the Hall State has been changed
+         if BOOLE_HALL_STATE_CHANGE
+         {
+           hall_ptr->num_pwm_60d_m = hall_ptr->cntr_pwm_60d;
+           hall_ptr->cntr_pwm_60d = 1;
+         }
+         else if(main_machine_state != STATE_MAIN_STOP_STANDBY) hall_ptr->cntr_pwm_60d++;
+         else hall_ptr->cntr_pwm_60d = 0;
+//
+//       vary hall observer state when motor speed is high enough
+         if(hall_ptr->dt_commutate_m_average < 0xA769) // >1200rpm // 0xC8E5) // >1000rpm
+         {
+					 hall_ptr->observer_state = STATE_HALL_OBSERVER_HS_CHECK;
+           SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0x82), hall_ptr->observer_state);
+         }
+       break;
+			 case STATE_HALL_OBSERVER_HS_CHECK:
+//       accumulate pwm number after the Hall State has been changed
+         if BOOLE_HALL_STATE_CHANGE
+         {
+           hall_ptr->num_pwm_60d_m = hall_ptr->cntr_pwm_60d;
+           hall_ptr->cntr_pwm_60d = 1;
+         }
+         else if(main_machine_state != STATE_MAIN_STOP_STANDBY) hall_ptr->cntr_pwm_60d++;
+         else hall_ptr->cntr_pwm_60d = 0;
+//
+//       verify Hall State when motor speed is high enough
+         if BOOLE_HALL_STATE_CHANGE
+         {
+           hall_ptr->d_num_pwm_60d = (hall_ptr->num_pwm_60d_m > hall_ptr->num_pwm_60d_p)? \
+                                     (hall_ptr->num_pwm_60d_m - hall_ptr->num_pwm_60d_p): \
+                                     (hall_ptr->num_pwm_60d_p - hall_ptr->num_pwm_60d_m);
+
+           if((hall_ptr->d_num_pwm_60d > 2) &&                        \
+              (hall_ptr->d_num_pwm_60d > (hall_ptr->num_pwm_60d_p>>2)))
+//           if((hall_ptr->num_pwm_60d_m+2) < hall_ptr->num_pwm_60d_p)
+           {
+             if(0)//(hall_ptr->cntr_forced_shift_period > 5)
+             {
+//             shifting point lead its predicted position?
+               if(hall_ptr->num_pwm_60d_m < hall_ptr->num_pwm_60d_p)
+               {
+                 hall_ptr->observer_state = STATE_HALL_OBSERVER_HS_FS_LEAD;
+                 hall_ptr->max_FS_LEAD = hall_ptr->num_pwm_60d_p;
+                 hall_ptr->cntr_FS_LEAD = 0;
+
+                 RESERVE_CURRENT_HALL_VALUE_TO_NEXT;
+                 LOAD_PREVIOUS_HALL_VALUE_TO_CURRENT;
+							   RENEW_CURRENT_HALL_STATE;
+
+                 hall_ptr->cntr_pwm_60d = hall_ptr->num_pwm_60d_m +1;
+                 SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0x82), hall_ptr->observer_state);
+               }
+               else
+               {
+                 BOOLE_HALL_STATE_VALIDITY_LEGAL = False;
+                 motor_ptr->app_status |= status_hall_error;
+               } /*if(hall_ptr->num_pwm_60d_m < hall_ptr->num_pwm_60d_p)*/
+             }
+						 else
+             {
+               BOOLE_HALL_STATE_VALIDITY_LEGAL = False;
+               motor_ptr->app_status |= status_hall_error;
+							 ww_ptr->watchwindow_triger = True;
+             } /*if(hall_ptr->cntr_forced_shift_period > 5)*/
+//
+             ww_ptr->watchwindow_triger = True;
+           } /*if((hall_ptr->d_num_pwm_60d > 1) &&...*/
+//
+//           if(hall_ptr->d_num_pwm_60d > 2) ww_ptr->watchwindow_triger = True;//hall_ptr->watchwindow_triger = True;
+//           if((hall_ptr->num_pwm_60d_m+2) < hall_ptr->num_pwm_60d_p)
+//					 {
+//             ww_ptr->watchwindow_triger = True;
+//					 }
+         }
+				 else
+         {
+//         vary hall observer state when motor speed is low enough
+           if(hall_ptr->dt_commutate_m_average > 0xC8E5) // <1000rpm // 0xFB1E) // <800rpm
+           {
+             hall_ptr->observer_state = STATE_HALL_OBSERVER_LS;
+             SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0x82), hall_ptr->observer_state);
+           }
+         } /*if BOOLE_HALL_STATE_CHANGE*/
+       break;
+       case STATE_HALL_OBSERVER_HS_FS_LEAD:
+//       accumulate pwm number after the Hall State has been changed
+         if((hall_ptr->cntr_pwm_60d == hall_ptr->num_pwm_60d_p) || \
+            (hall_ptr->num_pwm_60d_p < hall_ptr->cntr_pwm_60d))
+         {
+           RETRIEVE_NEXT_HALL_VALUE_TO_CURRENT;
+           RENEW_CURRENT_HALL_STATE;
+
+					 hall_ptr->observer_state = STATE_HALL_OBSERVER_HS_CHECK;
+           hall_ptr->cntr_pwm_60d = 1;
+         }
+				 else hall_ptr->cntr_pwm_60d++;
+
+         if(hall_ptr->cntr_FS_LEAD > hall_ptr->max_FS_LEAD)
+         {
+           BOOLE_HALL_STATE_VALIDITY_LEGAL = False;
+					 motor_ptr->app_status |= status_over_current; // temporarily use "status_over_current"
+         }
+				 else hall_ptr->cntr_FS_LEAD++;
+       break;
+       default:;
+     } /*switch (hall_ptr->observer_state)*/
+//
+//   watch window for fault Hall State		 
+     if(main_machine_state == STATE_MAIN_STOP_STANDBY)
+		 {
+//       hall_ptr->watchwindow_triger = False;
+//			 hall_ptr->ww_state = STATE_WatchWindow_Idle;
+			 ww_ptr->watchwindow_triger = False;
+			 ww_ptr->ww_state = STATE_WatchWindow_Idle;
+     }
+
+		 if(ww_ptr->ww_state == STATE_WatchWindow_Idle)
+     {
+       if(ww_ptr->watchwindow_triger)
+       {
+         ww_ptr->num_pwm_60d_m_wx0 = hall_ptr->num_pwm_60d_m;
+         ww_ptr->num_pwm_60d_p_wx0 = hall_ptr->num_pwm_60d_p;
+//       ww_ptr->watchwindow_triger = False;
+         ww_ptr->ww_state = STATE_WatchWindow_Wx0;
+       }
+     }
      
-     if((!BOOLE_HALL_STATE_LEGAL)&& BOOLE_HALL_STATE_LEGAL_PRE)
+     if((!BOOLE_HALL_STATE_VALIDITY_LEGAL)&& BOOLE_HALL_STATE_VALIDITY_LEGAL_PRE)
      {
        feedback_Test_0 = hall_ptr->sensored_current_state_pre;
        feedback_Test_1 = next_mos_state[hall_ptr->sensored_current_state_pre];
@@ -934,44 +1042,11 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
        feedback_Test_4 = hall_ptr->num_pwm_60d_p;
        feedback_Test_0_Long = hall_ptr->dt_commutate_p;
      }
-//
-////
-//     if (hall_ptr->observer_state == STATE_HALL_OBSERVER_HS)
-//     {
-//       hall_ptr->d_num_pwm_60d = hall_ptr->num_pwm_60d_m - hall_ptr->num_pwm_60d_p;
 
-//			 hall_ptr->min_d_num_pwm_60d = (hall_ptr->d_num_pwm_60d < hall_ptr->min_d_num_pwm_60d)? \
-//       hall_ptr->d_num_pwm_60d : hall_ptr->min_d_num_pwm_60d;
-
-//       hall_ptr->max_d_num_pwm_60d = (hall_ptr->d_num_pwm_60d > hall_ptr->max_d_num_pwm_60d)? \
-//       hall_ptr->d_num_pwm_60d : hall_ptr->max_d_num_pwm_60d;
-//			 
-//       if((hall_ptr->num_pwm_60d_m < (hall_ptr->num_pwm_60d_p-2)) || \
-//          ((hall_ptr->num_pwm_60d_p+2)< hall_ptr->num_pwm_60d_m))
-//       {
-//         hall_ptr->cntr_over_d_num_60d++;
-//			 }
-//     }
-//		 else if (hall_ptr->observer_state == STATE_HALL_OBSERVER_LS)
-//     {
-//			 if (hall_ptr->observer_state_pre == STATE_HALL_OBSERVER_HS)
-//       {
-////         SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0xB1), hall_ptr->min_d_num_pwm_60d);
-////         SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0xB2), hall_ptr->max_d_num_pwm_60d);
-////         SET_STDSCI_PACK_32_TX_OVERRUN(&(btx_ptr->pck_0xA4), &(btx_ptr->pck_0xA5), hall_ptr->cntr_over_d_num_60d);         
-//       }
-
-//       hall_ptr->max_d_num_pwm_60d = 0;
-//       hall_ptr->min_d_num_pwm_60d = 0;
-//			 hall_ptr->cntr_over_d_num_60d = 0;
-//     } /*if (hall_ptr->observer_state == STATE_HALL_OBSERVER_HS)*/
-////
-//     hall_ptr->observer_state_pre = hall_ptr->observer_state;
-////
-
-		 REFRESH_PREVIOUS_HALL_STATE_LEGAL;
-     REFRESH_PREVIOUS_HALL_STATE;
-     REFRESH_CURRENT_HALL_STATE;
+		 SAVE_CURRENT_HALL_STATE_VALIDITY_TO_PREVIOUS;
+     SAVE_CURRENT_HALL_VALUE_TO_PREVIOUS;
+     SAVE_CURRENT_HALL_STATE_TO_PREVIOUS;
+//     REFRESH_CURRENT_HALL_STATE;
 //
 //   a hall signal jumping edge has been detected and a DMA
 //   event occours
@@ -983,35 +1058,43 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 //     to newly captured value.
 //     "m": measured
 //     . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-       switch(hall_ptr->sensored_current_state)
+			 if (hall_ptr->observer_state == STATE_HALL_OBSERVER_HS_FS_LEAD)
        {
-         case Phs_I:
-           hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_U;
-           hall_ptr->t_commutate_m_I = hall_ptr->t_commutate_m;
-         break;
-         case Phs_II:
-           hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_W;
-           hall_ptr->t_commutate_m_II = hall_ptr->t_commutate_m;
-         break;
-         case Phs_III:
-           hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_V;
-           hall_ptr->t_commutate_m_III = hall_ptr->t_commutate_m;
-         break;
-         case Phs_IV:
-           hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_U;
-           hall_ptr->t_commutate_m_IV = hall_ptr->t_commutate_m;
-         break;
-         case Phs_V:
-           hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_W;
-           hall_ptr->t_commutate_m_V = hall_ptr->t_commutate_m;
-         break;
-         case Phs_VI:
-           hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_V;
-           hall_ptr->t_commutate_m_VI = hall_ptr->t_commutate_m;
-         break;
-         default:
-         break;
-       } /*switch(hall_ptr->sensored_current_state)*/			 
+         hall_ptr->t_commutate_m =  hall_ptr->t_commutate_m_pre+hall_ptr->dt_commutate_p;
+         hall_ptr->t_commutate_m -= hall_ptr->t_commutate_m>ARR_HALL_CAP? ARR_HALL_CAP:0;
+       }
+			 else
+       {
+         switch(hall_ptr->sensored_current_state)
+         {
+           case Phs_I:
+             hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_U;
+             hall_ptr->t_commutate_m_I = hall_ptr->t_commutate_m;
+           break;
+           case Phs_II:
+             hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_W;
+             hall_ptr->t_commutate_m_II = hall_ptr->t_commutate_m;
+           break;
+           case Phs_III:
+             hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_V;
+             hall_ptr->t_commutate_m_III = hall_ptr->t_commutate_m;
+           break;
+           case Phs_IV:
+             hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_U;
+             hall_ptr->t_commutate_m_IV = hall_ptr->t_commutate_m;
+           break;
+           case Phs_V:
+             hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_W;
+             hall_ptr->t_commutate_m_V = hall_ptr->t_commutate_m;
+           break;
+           case Phs_VI:
+             hall_ptr->t_commutate_m = hall_ptr->t_commutate_m_Hall_V;
+             hall_ptr->t_commutate_m_VI = hall_ptr->t_commutate_m;
+           break;
+           default:
+           break;
+         } /*switch(hall_ptr->sensored_current_state)*/
+       } /*if (hall_ptr->observer_state == STATE_HALL_OBSERVER_HS_FS_LEAD)*/
 //
 //     calculate dt_commutate_m
 //     . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -1171,6 +1254,48 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
          break;
        } /*switch(hall_ptr->num_pwm_60d_p)*/
 //
+       switch(ww_ptr->ww_state)
+       {
+         case STATE_WatchWindow_Wx0:
+           ww_ptr->num_pwm_60d_m_wx1 = hall_ptr->num_pwm_60d_m;
+           ww_ptr->num_pwm_60d_p_wx1 = hall_ptr->num_pwm_60d_p;
+           ww_ptr->ww_state = STATE_WatchWindow_Wx1;
+         break;
+         case STATE_WatchWindow_Wx1:
+           ww_ptr->num_pwm_60d_m_wx2 = hall_ptr->num_pwm_60d_m;
+           ww_ptr->num_pwm_60d_p_wx2 = hall_ptr->num_pwm_60d_p;
+           ww_ptr->ww_state = STATE_WatchWindow_Wx2;
+         break;
+         case STATE_WatchWindow_Wx2:
+           ww_ptr->num_pwm_60d_m_wx3 = hall_ptr->num_pwm_60d_m;
+           ww_ptr->num_pwm_60d_p_wx3 = hall_ptr->num_pwm_60d_p;
+           ww_ptr->ww_state = STATE_WatchWindow_Wx3;
+         break;
+         case STATE_WatchWindow_Wx3:
+           ww_ptr->num_pwm_60d_m_wx4 = hall_ptr->num_pwm_60d_m;
+           ww_ptr->num_pwm_60d_p_wx4 = hall_ptr->num_pwm_60d_p;
+           ww_ptr->ww_state = STATE_WatchWindow_Wx4;
+         break;
+         case STATE_WatchWindow_Wx4:
+           ww_ptr->num_pwm_60d_m_wx5 = hall_ptr->num_pwm_60d_m;
+           ww_ptr->num_pwm_60d_p_wx5 = hall_ptr->num_pwm_60d_p;
+           ww_ptr->ww_state = STATE_WatchWindow_Wx5;
+         break;
+         case STATE_WatchWindow_Wx5:
+           ww_ptr->num_pwm_60d_m_wx6 = hall_ptr->num_pwm_60d_m;
+           ww_ptr->num_pwm_60d_p_wx6 = hall_ptr->num_pwm_60d_p;
+           ww_ptr->ww_state = STATE_WatchWindow_Wx6;
+         break;
+         case STATE_WatchWindow_Wx6:
+           ww_ptr->num_pwm_60d_m_wx7 = hall_ptr->num_pwm_60d_m;
+           ww_ptr->num_pwm_60d_p_wx7 = hall_ptr->num_pwm_60d_p;
+           ww_ptr->ww_state = STATE_WatchWindow_STOP;
+         break;
+         case STATE_WatchWindow_STOP:
+         break;
+         default:;
+       } /*switch(hall_ptr->ww_state)*/
+//
        SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0xB1), hall_ptr->num_pwm_60d_m);
        SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0xB2), hall_ptr->num_pwm_60d_p);
        SET_STDSCI_PACK_TX_OVERRUN(&(btx_ptr->pck_0xB3), hall_ptr->num_pwm_60d_m - hall_ptr->num_pwm_60d_p);
@@ -1217,7 +1342,7 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
            hall_ptr->dt_commutate_p_pre_pre = hall_ptr->dt_commutate_p_pre;
            hall_ptr->dt_commutate_p_pre = hall_ptr->dt_commutate_p;
            hall_ptr->dt_commutate_p = hall_ptr->dt_commutate_m_average;
-		 
+
            hall_ptr->e_dt_commutate = 0;
            hall_ptr->s_e_dt_commutate = 0;
            hall_ptr->d_e_dt_commutate = 0;
@@ -1235,20 +1360,20 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
 		 hall_ptr = &bldcm_hall_observer_m1;
 
 		 u8 i=0;
-		 
+
      hall_ptr->dt_commutate_m_sample_index = 0;
 		 hall_ptr->dt_commutate_m_average = ARR_HALL_CAP;
-		 
+
 		 for (i=0;i<NUM_DT_SAMPLES;i++)
      {
        hall_ptr->dt_commutate_m_buffer[i] = ARR_HALL_CAP;
 			 hall_ptr->dt_commutate_m_sum += ARR_HALL_CAP;
      }
 
-     hall_ptr->dt_commutate_p = ARR_HALL_CAP;		 
+     hall_ptr->dt_commutate_p = ARR_HALL_CAP;
      hall_ptr->dt_commutate_p_pre = ARR_HALL_CAP;
      hall_ptr->dt_commutate_p_pre_pre = ARR_HALL_CAP;
-		 
+
 		 hall_ptr->e_dt_commutate = 0;
 		 hall_ptr->s_e_dt_commutate = 0;
 		 hall_ptr->d_e_dt_commutate = 0;
@@ -1262,11 +1387,11 @@ uint32_t debug_Array_1[8] = {9,9,9,9,9,9,9,9};
      hall_ptr->hall_value &= BOOLE_HALL_U_RESET? ~BIT_HALL_U:0xFF;
      hall_ptr->hall_value |= BOOLE_HALL_W_SET? BIT_HALL_W:0x00;
      hall_ptr->hall_value &= BOOLE_HALL_V_RESET? ~BIT_HALL_V:0xFF;
-     hall_ptr->hall_value |= BOOLE_HALL_U_SET? BIT_HALL_U:0x00;  
+     hall_ptr->hall_value |= BOOLE_HALL_U_SET? BIT_HALL_U:0x00;
 
-     REFRESH_CURRENT_HALL_STATE;
-     REFRESH_PREVIOUS_HALL_STATE;
-		 
+     RENEW_CURRENT_HALL_STATE;
+     SAVE_CURRENT_HALL_STATE_TO_PREVIOUS;
+
 		 hall_ptr->observer_state = STATE_HALL_OBSERVER_LS;
    }
 

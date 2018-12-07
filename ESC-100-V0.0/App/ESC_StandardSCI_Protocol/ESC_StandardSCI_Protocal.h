@@ -102,7 +102,7 @@
 
        struct STDSCI_PACK_TX pck_0x80;
        struct STDSCI_PACK_TX pck_0x81;
-			 struct STDSCI_PACK_TX pck_0x82;
+       struct STDSCI_PACK_TX pck_0x82;
 
        struct STDSCI_PACK_TX pck_0x90;
        struct STDSCI_PACK_TX pck_0x91;
@@ -122,6 +122,23 @@
 
        struct STDSCI_PACK_TX pck_0xC0;
        struct STDSCI_PACK_TX pck_0xC1;
+
+       struct STDSCI_PACK_TX pck_0xD0;
+       struct STDSCI_PACK_TX pck_0xD1;
+       struct STDSCI_PACK_TX pck_0xD2;
+       struct STDSCI_PACK_TX pck_0xD3;
+       struct STDSCI_PACK_TX pck_0xD4;
+       struct STDSCI_PACK_TX pck_0xD5;
+       struct STDSCI_PACK_TX pck_0xD6;
+       struct STDSCI_PACK_TX pck_0xD7;
+       struct STDSCI_PACK_TX pck_0xD8;
+       struct STDSCI_PACK_TX pck_0xD9;
+       struct STDSCI_PACK_TX pck_0xDA;
+       struct STDSCI_PACK_TX pck_0xDB;
+       struct STDSCI_PACK_TX pck_0xDC;
+       struct STDSCI_PACK_TX pck_0xDD;
+       struct STDSCI_PACK_TX pck_0xDE;
+       struct STDSCI_PACK_TX pck_0xDF; 
 
        struct STDSCI_PACK_TX pck_0xE0;
        struct STDSCI_PACK_TX pck_0xE1;

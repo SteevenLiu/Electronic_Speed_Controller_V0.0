@@ -49,6 +49,9 @@
      STDSCI_PACK_BUFF* prx_ptr; 
      prx_ptr = &pack_rx_buff;
 
+		 WatchWindow* ww_ptr;
+		 ww_ptr = &num_pwm;		 
+		 
      u16 frame_Data;
 
      main_state_machine();
@@ -128,14 +131,34 @@
 //     SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xB1), hall_ptr->num_pwm_60d_m, 999); //1s interval
 //     SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xB2), hall_ptr->num_pwm_60d_p, 999); //1s interval
 
-     SET_STDSCI_PACK_32_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xE0), &(btx_ptr->pck_0xE1), feedback_Test_0_Long, 1999); //2s
-//   SET_STDSCI_PACK_32_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xE2), &(btx_ptr->pck_0xE3), feedback_Test1_32, 1999); //2s
+     if(main_machine_state == STATE_MAIN_STOP_STANDBY)
+     {
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xD0), ww_ptr->num_pwm_60d_m_wx0, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xD1), ww_ptr->num_pwm_60d_p_wx0, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xD2), ww_ptr->num_pwm_60d_m_wx1, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xD3), ww_ptr->num_pwm_60d_p_wx1, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xD4), ww_ptr->num_pwm_60d_m_wx2, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xD5), ww_ptr->num_pwm_60d_p_wx2, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xD6), ww_ptr->num_pwm_60d_m_wx3, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xD7), ww_ptr->num_pwm_60d_p_wx3, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xD8), ww_ptr->num_pwm_60d_m_wx4, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xD9), ww_ptr->num_pwm_60d_p_wx4, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xDA), ww_ptr->num_pwm_60d_m_wx5, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xDB), ww_ptr->num_pwm_60d_p_wx5, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xDC), ww_ptr->num_pwm_60d_m_wx6, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xDD), ww_ptr->num_pwm_60d_p_wx6, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xDE), ww_ptr->num_pwm_60d_m_wx7, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xDF), ww_ptr->num_pwm_60d_p_wx7, 1999);
 
-     SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xF0), feedback_Test_0, 1999);
-     SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xF1), feedback_Test_1, 1999);
-     SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xF2), feedback_Test_2, 1999);
-     SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xF3), feedback_Test_3, 1999);
-     SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xF4), feedback_Test_4, 1999);
+       SET_STDSCI_PACK_32_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xE0), &(btx_ptr->pck_0xE1), feedback_Test_0_Long, 1999); //2s
+//     SET_STDSCI_PACK_32_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xE2), &(btx_ptr->pck_0xE3), feedback_Test1_32, 1999); //2s
+
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xF0), feedback_Test_0, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xF1), feedback_Test_1, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xF2), feedback_Test_2, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xF3), feedback_Test_3, 1999);
+       SET_STDSCI_PACK_TX_OVERRUN_INTERVAL(&(btx_ptr->pck_0xF4), feedback_Test_4, 1999);
+     }
 
      if(btx_ptr->flag_TC == False) StdSci_Send_in_ISR(USART1);
 
