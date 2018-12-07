@@ -1,0 +1,1209 @@
+Dependencies for Project 'DEMO_STM32F303CC', Target 'Target': (DO NOT MODIFY !)
+F (..\CMSIS\source\system_stm32f30x.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\system_stm32f30x.o --omf_browse .\objects\system_stm32f30x.crf --depend .\objects\system_stm32f30x.d)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Startup\startup_stm32f30x.s)(0x5C07D06F)(--cpu Cortex-M4.fp -g --apcs=interwork -I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 515" --pd "STM32F303xC SETA 1"--list .\listings\startup_stm32f30x.lst --xref -o .\objects\startup_stm32f30x.o --depend .\objects\startup_stm32f30x.d)
+F (..\User\source\main.c)(0x5C092380)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\Basic\rcc\rcc.h)(0x5C07D06F)
+I (..\Basic\nvic\nvic.h)(0x5C07D06F)
+I (..\Basic\delay\delay.h)(0x5C07D06F)
+I (..\Basic\usart\usart.h)(0x5C07D06F)
+I (..\Basic\timer\timer.h)(0x5C07D06F)
+I (..\Basic\hall\hall.h)(0x5C07D06F)
+I (..\Basic\adc\adc.h)(0x5C07D06F)
+I (..\Basic\dma\dma.h)(0x5C07D06F)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_DataTypeDef.h)(0x5C08F9AA)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_Protocal.h)(0x5C08FAE7)
+I (..\App\ESC_Chopper\ESC_Chopper.h)(0x5C07D06F)
+I (..\ISRs\ESC_ISRs_TIM1\ESC_ISRs_TIM1.h)(0x5C07D06F)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+I (..\App\ESC_BLDCM_MISC\ESC_BLDCM_MISC.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_BASIC\ESC_BLDCM_BASIC.h)(0x5C07D06F)
+I (..\App\ESC_Parameter\ESC_Parameter.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_Hall\ESC_BLDCM_Hall.h)(0x5C08BA88)
+F (..\User\source\stm32f30x_it.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f30x_it.o --omf_browse .\objects\stm32f30x_it.crf --depend .\objects\stm32f30x_it.d)
+I (..\User\include\stm32f30x_it.h)(0x5C07D06F)
+I (..\User\include\main.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Libraries\STM32F30x_StdPeriph_Driver\src\stm32f30x_rcc.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f30x_rcc.o --omf_browse .\objects\stm32f30x_rcc.crf --depend .\objects\stm32f30x_rcc.d)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Libraries\STM32F30x_StdPeriph_Driver\src\stm32f30x_tim.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f30x_tim.o --omf_browse .\objects\stm32f30x_tim.crf --depend .\objects\stm32f30x_tim.d)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Libraries\STM32F30x_StdPeriph_Driver\src\stm32f30x_usart.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f30x_usart.o --omf_browse .\objects\stm32f30x_usart.crf --depend .\objects\stm32f30x_usart.d)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Libraries\STM32F30x_StdPeriph_Driver\src\stm32f30x_gpio.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f30x_gpio.o --omf_browse .\objects\stm32f30x_gpio.crf --depend .\objects\stm32f30x_gpio.d)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Libraries\STM32F30x_StdPeriph_Driver\src\stm32f30x_misc.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f30x_misc.o --omf_browse .\objects\stm32f30x_misc.crf --depend .\objects\stm32f30x_misc.d)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+F (..\Libraries\STM32F30x_StdPeriph_Driver\src\stm32f30x_flash.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f30x_flash.o --omf_browse .\objects\stm32f30x_flash.crf --depend .\objects\stm32f30x_flash.d)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Libraries\STM32F30x_StdPeriph_Driver\src\stm32f30x_adc.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f30x_adc.o --omf_browse .\objects\stm32f30x_adc.crf --depend .\objects\stm32f30x_adc.d)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Libraries\STM32F30x_StdPeriph_Driver\src\stm32f30x_dma.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f30x_dma.o --omf_browse .\objects\stm32f30x_dma.crf --depend .\objects\stm32f30x_dma.d)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Basic\usart\usart.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (..\Basic\usart\usart.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Basic\flash\flash.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\flash.o --omf_browse .\objects\flash.crf --depend .\objects\flash.d)
+I (..\Basic\flash\flash.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Basic\timer\timer.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+I (..\Basic\timer\timer.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Basic\nvic\nvic.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\nvic.o --omf_browse .\objects\nvic.crf --depend .\objects\nvic.d)
+I (..\Basic\nvic\nvic.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Basic\hall\hall.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\hall.o --omf_browse .\objects\hall.crf --depend .\objects\hall.d)
+I (..\Basic\hall\hall.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Basic\adc\adc.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (..\Basic\adc\adc.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\Basic\delay\delay.h)(0x5C07D06F)
+F (..\Basic\delay\delay.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (..\Basic\delay\delay.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Basic\dma\dma.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\dma.o --omf_browse .\objects\dma.crf --depend .\objects\dma.d)
+I (..\Basic\dma\dma.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\Basic\rcc\rcc.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\rcc.o --omf_browse .\objects\rcc.crf --depend .\objects\rcc.d)
+I (..\Basic\rcc\rcc.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\App\ESC_Chopper\ESC_Chopper.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_chopper.o --omf_browse .\objects\esc_chopper.crf --depend .\objects\esc_chopper.d)
+I (..\App\ESC_Chopper\ESC_Chopper.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_Protocal.c)(0x5C092AAC)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_standardsci_protocal.o --omf_browse .\objects\esc_standardsci_protocal.crf --depend .\objects\esc_standardsci_protocal.d)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_Protocal.h)(0x5C08FAE7)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_DataTypeDef.h)(0x5C08F9AA)
+F (..\App\ESC_StateMachine\ESC_StateMachine_Main.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_statemachine_main.o --omf_browse .\objects\esc_statemachine_main.crf --depend .\objects\esc_statemachine_main.d)
+I (..\App\ESC_StateMachine\ESC_StateMachine.h)(0x5C07D06F)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_MISC\ESC_BLDCM_MISC.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_BASIC\ESC_BLDCM_BASIC.h)(0x5C07D06F)
+I (..\Basic\hall\hall.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_Hall\ESC_BLDCM_Hall.h)(0x5C08BA88)
+I (..\App\ESC_Chopper\ESC_Chopper.h)(0x5C07D06F)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_Protocal.h)(0x5C08FAE7)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_DataTypeDef.h)(0x5C08F9AA)
+F (..\App\ESC_StateMachine\ESC_StateMachine_Control.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_statemachine_control.o --omf_browse .\objects\esc_statemachine_control.crf --depend .\objects\esc_statemachine_control.d)
+I (..\App\ESC_StateMachine\ESC_StateMachine.h)(0x5C07D06F)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_MISC\ESC_BLDCM_MISC.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_BASIC\ESC_BLDCM_BASIC.h)(0x5C07D06F)
+I (..\Basic\hall\hall.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_Hall\ESC_BLDCM_Hall.h)(0x5C08BA88)
+I (..\App\ESC_Chopper\ESC_Chopper.h)(0x5C07D06F)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_Protocal.h)(0x5C08FAE7)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_DataTypeDef.h)(0x5C08F9AA)
+F (..\App\ESC_BLDCM_MISC\ESC_BLDCM_MISC.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_bldcm_misc.o --omf_browse .\objects\esc_bldcm_misc.crf --depend .\objects\esc_bldcm_misc.d)
+I (..\App\ESC_BLDCM_MISC\ESC_BLDCM_MISC.h)(0x5C07D06F)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_BASIC\ESC_BLDCM_BASIC.h)(0x5C07D06F)
+I (..\Basic\hall\hall.h)(0x5C07D06F)
+F (..\App\ESC_BLDCM_BASIC\ESC_BLDCM_BASIC.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_bldcm_basic.o --omf_browse .\objects\esc_bldcm_basic.crf --depend .\objects\esc_bldcm_basic.d)
+I (..\App\ESC_BLDCM_BASIC\ESC_BLDCM_BASIC.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+F (..\App\ESC_BLDCM_Hall\ESC_BLDCM_Hall.c)(0x5C0A2183)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_bldcm_hall.o --omf_browse .\objects\esc_bldcm_hall.crf --depend .\objects\esc_bldcm_hall.d)
+I (..\App\ESC_BLDCM_Hall\ESC_BLDCM_Hall.h)(0x5C08BA88)
+I (..\Basic\hall\hall.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+I (..\App\ESC_BLDCM_BASIC\ESC_BLDCM_BASIC.h)(0x5C07D06F)
+I (..\App\ESC_Chopper\ESC_Chopper.h)(0x5C07D06F)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_Protocal.h)(0x5C08FAE7)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_DataTypeDef.h)(0x5C08F9AA)
+F (..\App\ESC_Parameter\ESC_Parameter.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_parameter.o --omf_browse .\objects\esc_parameter.crf --depend .\objects\esc_parameter.d)
+I (..\App\ESC_Parameter\ESC_Parameter.h)(0x5C07D06F)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\ISRs\ESC_ISRs_SysTick\ESC_ISRs_SysTick.c)(0x5C092ACE)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_isrs_systick_1.o --omf_browse .\objects\esc_isrs_systick_1.crf --depend .\objects\esc_isrs_systick_1.d)
+I (..\ISRs\ESC_ISRs_SysTick\ESC_ISRs_SysTick.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\App\ESC_Chopper\ESC_Chopper.h)(0x5C07D06F)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_DataTypeDef.h)(0x5C08F9AA)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_Protocal.h)(0x5C08FAE7)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+I (..\App\ESC_StateMachine\ESC_StateMachine.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_MISC\ESC_BLDCM_MISC.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_BASIC\ESC_BLDCM_BASIC.h)(0x5C07D06F)
+I (..\Basic\hall\hall.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_Hall\ESC_BLDCM_Hall.h)(0x5C08BA88)
+F (..\ISRs\ESC_ISRs_TIM1\ESC_ISRs_TIM1.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_isrs_tim1_1.o --omf_browse .\objects\esc_isrs_tim1_1.crf --depend .\objects\esc_isrs_tim1_1.d)
+I (..\ISRs\ESC_ISRs_TIM1\ESC_ISRs_TIM1.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+F (..\ISRs\ESC_ISRs_TIM8\ESC_ISRs_TIM8.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_isrs_tim8_1.o --omf_browse .\objects\esc_isrs_tim8_1.crf --depend .\objects\esc_isrs_tim8_1.d)
+I (..\ISRs\ESC_ISRs_TIM8\ESC_ISRs_TIM8.h)(0x5C07D06F)
+I (..\App\ESC_Chopper\ESC_Chopper.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\Basic\hall\hall.h)(0x5C07D06F)
+I (..\App\ESC_StateMachine\ESC_StateMachine.h)(0x5C07D06F)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+I (..\App\ESC_BLDCM_MISC\ESC_BLDCM_MISC.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_BASIC\ESC_BLDCM_BASIC.h)(0x5C07D06F)
+I (..\App\ESC_BLDCM_Hall\ESC_BLDCM_Hall.h)(0x5C08BA88)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_Protocal.h)(0x5C08FAE7)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_DataTypeDef.h)(0x5C08F9AA)
+F (..\ISRs\ESC_ISRs_USART1\ESC_ISRs_USART1.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_isrs_usart1_1.o --omf_browse .\objects\esc_isrs_usart1_1.crf --depend .\objects\esc_isrs_usart1_1.d)
+I (..\ISRs\ESC_ISRs_USART1\ESC_ISRs_USART1.h)(0x5C07D06F)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_Protocal.h)(0x5C08FAE7)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_DataTypeDef.h)(0x5C08F9AA)
+F (..\ISRs\ESC_ISRs_ADC1_2\ESC_ISRs_ADC1_2.c)(0x5C07D06F)(--c99 -c --cpu Cortex-M4.fp -g -O2 -Otime --apcs=interwork --split_sections -I..\CMSIS\include -I..\Libraries\STM32F30x_StdPeriph_Driver\inc -I..\Libraries\STM32F30x_I2C_CPAL_Driver\inc -I..\User\include -I..\Basic\nvic -I..\Basic\delay -I..\Basic\usart -I..\Basic\hall -I..\Basic\timer -I..\Basic\flash -I..\Basic\delay -I..\Basic\adc -I..\Basic\rcc -I..\Basic\dma -I..\App\ESC_StandardSCI_Protocol -I..\App\ESC_Chopper -I..\App\ESC_StateMachine -I..\App\ESC_BLDCM_Hall -I..\App\ESC_BLDCM_MISC -I..\App\ESC_BLDCM_BASIC -I..\App\ESC_Parameter -I..\ISRs\ESC_ISRs_SysTick -I..\ISRs\ESC_ISRs_TIM1 -I..\ISRs\ESC_ISRs_TIM8 -I..\ISRs\ESC_ISRs_USART1 -I..\ISRs\ESC_ISRs_ADC1_2-I "G:\work\GitHub Local\Electronic_Speed_Controller_V0.0\ESC-100-V0.0\Keil Project\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F303xC -DUSE_STDPERIPH_DRIVER-o .\objects\esc_isrs_adc1_2.o --omf_browse .\objects\esc_isrs_adc1_2.crf --depend .\objects\esc_isrs_adc1_2.d)
+I (..\ISRs\ESC_ISRs_ADC1_2\ESC_ISRs_ADC1_2.h)(0x5C07D06F)
+I (..\User\include\ESC_Device.h)(0x5C07D06F)
+I (..\CMSIS\include\stm32f30x.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cm4.h)(0x5C07D06F)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\CMSIS\include\core_cmInstr.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmFunc.h)(0x5C07D06F)
+I (..\CMSIS\include\core_cmSimd.h)(0x5C07D06F)
+I (..\CMSIS\include\system_stm32f30x.h)(0x5C07D06F)
+I (..\User\include\stm32f30x_conf.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_adc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_can.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_crc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_comp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dac.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dbgmcu.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_dma.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_exti.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_flash.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_fmc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_gpio.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_hrtim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_syscfg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_i2c.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_iwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_opamp.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_pwr.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rcc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_rtc.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_spi.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_tim.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_usart.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_wwdg.h)(0x5C07D06F)
+I (..\Libraries\STM32F30x_StdPeriph_Driver\inc\stm32f30x_misc.h)(0x5C07D06F)
+I (..\User\include\ESC_BLDCM_Config.h)(0x5C0A184D)
+I (..\App\ESC_BLDCM_BASIC\ESC_BLDCM_BASIC.h)(0x5C07D06F)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_Protocal.h)(0x5C08FAE7)
+I (..\App\ESC_StandardSCI_Protocol\ESC_StandardSCI_DataTypeDef.h)(0x5C08F9AA)
